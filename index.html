@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="tema"> Hotel </h1>
+    <p id="text"> Welcome to "Pamir Alai" resort</p>
+    <img id="photo" src="as.jpg" height="400"> 
+    <br>
+    <button onclick="change()" style="width: 200px; height:30px ; color: indigo; background-color: sandybrown;">Next</button>
+    <script>
+        function change(){
+            document.getElementById("photo").src="sul.jpg";
+            document.getElementById("tema").innerHTML="Sulaiman-Too";
+            document.getElementById("text").innerHTML="Welcome to Sulaiman-Too";
+            document.getElementById("text").style.color="black";
+            document.body.style.background="wheat";
+        }
+
+    </script>
+    <button onclick="change2()" style="width: 200px; height:30px;color: indigo; background-color:sandybrown;">Back</button>
+    <script> 
+        function change2(){
+            document.getElementById("photo").src="dd.jpg";
+            document.getElementById("tema").innerHTML="Hotel";
+            document.getElementById("text").innerHTML="Welcome to Pamir Alai resort";
+            document.getElementById("text").style.color="black";
+            document.body.style.background="#84e786";
+        }
+    </script>
+    <h1 id="counter">0</h1>
+    <button onclick="plus()" style="width: 200px; height: 40px; color: white;background-color: chocolate;">Add person reservetion</button>
+    <script>
+        var c=0
+        function plus(){
+           c++; //c=c+1
+           document.getElementById("counter").innerHTML=c;
+        }
+    </script>
+     <button onclick="minus()" style="width: 200px; height: 40px; color: white;background-color: chocolate;">Delete person reservetion</button>
+     <script>
+        function minus(){
+            c--;
+            document.getElementById("counter").innerHTML=c;
+        }
+    </script>
+<body>
+</html>
